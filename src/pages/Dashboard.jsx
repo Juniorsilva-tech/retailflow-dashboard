@@ -3,6 +3,7 @@ import StatCard from '../components/dashboard/StatCard'
 import SalesChart from '../components/dashboard/SalesChart'
 import PaymentStatusChart from '../components/dashboard/PaymentStatusChart'
 import RecentOrders from '../components/dashboard/RecentOrders'
+import CustomersRegionMap from '../components/dashboard/CustomersRegionMap'
 import Card from '../components/ui/Card'
 import Badge from '../components/ui/Badge'
 import { useDashboardMetrics } from '../hooks/useDashboardMetrics'
@@ -12,7 +13,7 @@ export default function Dashboard() {
   const metrics = useDashboardMetrics()
   return (
     <div className="space-y-8">
-      <section><p className="text-sm font-black uppercase tracking-[0.24em] text-sky-300">Overview</p><h2 className="mt-3 text-4xl font-black tracking-[-0.06em] md:text-5xl">Visão geral do negócio</h2><p className="mt-3 max-w-2xl text-slate-400">Acompanhe clientes, vendas, pedidos e pagamentos pendentes em uma interface SaaS premium.</p></section>
+      <section><p className="text-sm font-black uppercase tracking-[0.24em] text-sky-300">Overview</p><h2 className="mt-3 text-4xl font-black tracking-[-0.06em] md:text-5xl">Visão geral do negócio</h2><p className="mt-3 max-w-2xl text-slate-400">Acompanhe clientes, vendas, pedidos, pagamentos e presença regional em uma interface SaaS premium.</p></section>
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <StatCard title="Total de clientes" value={metrics.totalCustomers} icon={Users} />
         <StatCard title="Recebido" value={metrics.totalRevenue} icon={DollarSign} money />
@@ -22,6 +23,7 @@ export default function Dashboard() {
         <StatCard title="Ticket médio" value={metrics.averageTicket} icon={CheckCircle} money />
       </section>
       <section className="grid gap-4 xl:grid-cols-[1.35fr_0.85fr]"><SalesChart data={metrics.salesByMonth} /><PaymentStatusChart data={metrics.paymentStatus} /></section>
+      <CustomersRegionMap />
       <section className="grid gap-4 xl:grid-cols-[1fr_0.85fr]">
         <RecentOrders orders={metrics.recentOrders} />
         <Card>

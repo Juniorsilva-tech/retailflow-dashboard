@@ -1,6 +1,6 @@
 # RetailFlow Dashboard
 
-Dashboard SaaS premium desenvolvido para demonstrar habilidades em **React**, **interfaces modernas**, **CRUD**, **dashboards responsivos** e experiência de produto aplicada a pequenos negócios.
+Demo funcional de dashboard SaaS desenvolvida para demonstrar habilidades em **React**, **CRUD**, **interfaces modernas**, **dashboards responsivos** e experiência de produto aplicada a pequenos negócios.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -19,18 +19,37 @@ Dashboard SaaS premium desenvolvido para demonstrar habilidades em **React**, **
 
 ## Sobre o Projeto
 
-O **RetailFlow Dashboard** é uma demonstração funcional de um sistema SaaS voltado para pequenos negócios.
+O **RetailFlow Dashboard** é uma demo técnica e visual criada para simular um dashboard SaaS moderno voltado para pequenos negócios.
 
-O projeto foi criado com foco em:
+O objetivo principal do projeto não é representar um produto comercial finalizado, mas sim demonstrar:
 
 - construção de interfaces profissionais;
-- dashboards responsivos;
-- organização de componentes;
-- gerenciamento de estado;
+- organização de dashboards;
 - experiência de produto;
-- visual premium dark mode.
+- CRUDs completos;
+- componentização em React;
+- responsividade;
+- UI moderna;
+- organização de aplicações Front-end.
 
 A aplicação atualmente funciona como uma **demo funcional premium**, utilizando dados simulados e persistência local via `localStorage`.
+
+---
+
+## Natureza da Aplicação
+
+Este projeto deve ser entendido como uma **demo funcional de Front-end**.
+
+Ele foi criado para demonstrar capacidade técnica, experiência visual e construção de interfaces modernas.
+
+Atualmente:
+
+- não possui backend real;
+- não possui autenticação;
+- utiliza persistência local;
+- não é um SaaS comercial finalizado.
+
+Mesmo assim, a aplicação foi construída buscando transmitir sensação de produto real e experiência moderna de dashboard.
 
 ---
 
@@ -46,7 +65,7 @@ Este projeto foi desenvolvido para demonstrar capacidade prática em:
 - tabelas, filtros e modais;
 - organização de aplicações web modernas.
 
-Também serve como demonstração de potencial para freelas e futuros projetos comerciais.
+Também serve como demonstração de potencial para freelas, vagas e futuros projetos comerciais.
 
 ---
 

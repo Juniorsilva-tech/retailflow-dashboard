@@ -1,51 +1,52 @@
 # RetailFlow Dashboard
 
-Dashboard SaaS premium para pequenos negócios controlarem **clientes, pedidos, pagamentos e cobranças**.
+Dashboard SaaS premium desenvolvido para demonstrar habilidades em **React**, **interfaces modernas**, **CRUD**, **dashboards responsivos** e experiência de produto aplicada a pequenos negócios.
 
-🔗 **Deploy:** https://retailflow-dashboard.vercel.app  
-👨‍💻 **Autor:** Maurício Júnior  
-📌 **Status:** Demo funcional premium com dados simulados e persistência local
-
----
-
-## Sobre o projeto
-
-O **RetailFlow** é uma demonstração funcional de um dashboard SaaS para pequenos negócios. Ele foi criado como projeto de portfólio Front-end React para mostrar domínio de interface, organização de código, CRUD, responsividade, dashboards e experiência de produto.
-
-A versão atual usa **dados simulados + localStorage**, ou seja: os dados podem ser criados, editados e removidos no navegador e continuam salvos localmente após atualizar a página.
-
-O objetivo desta versão não é ser um SaaS completo ainda, mas sim uma **demo premium, visualmente forte e tecnicamente organizada**, pronta para evoluir para Supabase, autenticação e banco real.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38BDF8)
+![Recharts](https://img.shields.io/badge/Recharts-111827?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ---
 
-## Objetivo profissional
+## Live Demo
 
-Este projeto foi desenvolvido para demonstrar habilidades importantes para vagas de **estágio/primeira oportunidade como Front-end React** e também para servir como vitrine de freelas para pequenos negócios.
+**Deploy:** https://retailflow-dashboard.vercel.app  
+**GitHub:** https://github.com/Juniorsilva-tech/retailflow-dashboard
 
-Ele mostra capacidade de construir:
+---
 
-- interfaces SaaS modernas;
+## Sobre o Projeto
+
+O **RetailFlow Dashboard** é uma demonstração funcional de um sistema SaaS voltado para pequenos negócios.
+
+O projeto foi criado com foco em:
+
+- construção de interfaces profissionais;
 - dashboards responsivos;
-- CRUD funcional;
-- tabelas, filtros e modais;
-- visual premium dark mode;
-- gráficos e métricas;
-- experiência de produto aplicada a negócio real.
+- organização de componentes;
+- gerenciamento de estado;
+- experiência de produto;
+- visual premium dark mode.
+
+A aplicação atualmente funciona como uma **demo funcional premium**, utilizando dados simulados e persistência local via `localStorage`.
 
 ---
 
-## Stack utilizada
+## Objetivo Profissional
 
-- **React**
-- **Vite**
-- **Tailwind CSS**
-- **React Router DOM**
-- **Framer Motion**
-- **Lucide React**
-- **Recharts**
-- **localStorage**
-- **Vercel**
-- **Git/GitHub**
+Este projeto foi desenvolvido para demonstrar capacidade prática em:
+
+- Front-end React;
+- dashboards SaaS;
+- CRUD completo;
+- UI/UX;
+- componentização;
+- tabelas, filtros e modais;
+- organização de aplicações web modernas.
+
+Também serve como demonstração de potencial para freelas e futuros projetos comerciais.
 
 ---
 
@@ -53,103 +54,126 @@ Ele mostra capacidade de construir:
 
 ### Dashboard
 
-- Cards de métricas principais
+- Métricas principais
 - Receita recebida
 - Valor pendente
-- Pagamentos pendentes
 - Pagamentos atrasados
 - Ticket médio
-- Gráfico de vendas por mês
-- Gráfico de status de pagamentos
+- Gráficos financeiros
 - Pedidos recentes
-- Atenção financeira
-- Mapa de clientes por região
+- Mapa regional de clientes
+- Alertas financeiros
 
 ### Clientes
 
-- Criar cliente
-- Editar cliente
-- Excluir cliente
-- Buscar cliente
-- Filtrar por status
-- Status visual com badges
+- Criar clientes
+- Editar clientes
+- Excluir clientes
+- Busca dinâmica
+- Filtros por status
+- Badges visuais
 
 ### Pedidos
 
-- Criar pedido
-- Editar pedido
-- Excluir pedido
-- Filtrar pedidos
-- Relacionar pedido com cliente
-- Status de pedido e pagamento
+- CRUD de pedidos
+- Status de pedido
+- Integração com clientes
+- Controle de pagamentos
+- Filtros dinâmicos
 
 ### Pagamentos
 
-- Criar pagamento
-- Editar pagamento
-- Excluir pagamento
-- Marcar como pago
-- Calcular valor restante
-- Detectar status de pagamento
+- Controle financeiro
+- Marcar pagamentos como pagos
+- Detecção de status
+- Valor restante
+- CRUD de pagamentos
 
 ### Relatórios
 
-- Valor recebido
-- Valor pendente
+- Receita recebida
+- Receita pendente
 - Clientes inadimplentes
-- Pedidos do mês
-- Top clientes por valor
-- Pedidos por status
+- Top clientes
+- Métricas do mês
+- Relatórios visuais
 
 ---
 
-## Persistência local
+## Stack Utilizada
 
-A versão atual salva os dados no navegador usando `localStorage`.
+### Front-end
 
-Isso significa que a demo funciona sem backend e sem consumir projeto do Supabase, mas ainda permite uma experiência mais próxima de um sistema real.
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+- Lucide React
+- Recharts
 
-Dados persistidos localmente:
+### Persistência
 
-- clientes;
-- pedidos;
-- pagamentos.
+- localStorage
+
+### Deploy e Versionamento
+
+- Vercel
+- Git
+- GitHub
 
 ---
 
-## Estrutura do projeto
+## Persistência Local
+
+Os dados da aplicação são persistidos localmente usando `localStorage`.
+
+Isso permite:
+
+- criar registros;
+- editar registros;
+- excluir registros;
+- manter dados salvos após atualização da página.
+
+A proposta atual é demonstrar arquitetura de interface e experiência de produto antes da integração com backend real.
+
+---
+
+## Estrutura do Projeto
 
 ```txt
 retailflow-dashboard/
 ├── index.html
 ├── package.json
 ├── README.md
-├── src/
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── index.css
-│   ├── context/
-│   │   └── DataContext.jsx
-│   ├── data/
-│   │   └── mockData.js
-│   ├── hooks/
-│   ├── layouts/
-│   ├── pages/
-│   ├── components/
-│   │   ├── ui/
-│   │   ├── dashboard/
-│   │   ├── customers/
-│   │   ├── orders/
-│   │   └── payments/
-│   └── utils/
+└── src/
+    ├── App.jsx
+    ├── main.jsx
+    ├── index.css
+    ├── context/
+    ├── data/
+    ├── hooks/
+    ├── layouts/
+    ├── pages/
+    ├── components/
+    └── utils/
 ```
 
 ---
 
-## Como rodar localmente
+## Rodando Localmente
 
 ```bash
+# Clone o repositório
+git clone https://github.com/Juniorsilva-tech/retailflow-dashboard.git
+
+# Entre na pasta
+cd retailflow-dashboard
+
+# Instale as dependências
 npm install
+
+# Rode o projeto
 npm run dev
 ```
 
@@ -161,42 +185,53 @@ http://localhost:5173
 
 ---
 
-## Build de produção
+## Build de Produção
 
 ```bash
 npm run build
-```
-
-Visualizar build local:
-
-```bash
 npm run preview
 ```
 
 ---
 
-## Roadmap
+## Próximos Passos
 
-Próximos passos planejados:
-
-- adicionar prints reais no README;
-- melhorar mapa com dados dinâmicos dos clientes;
-- adicionar página de detalhes do cliente;
-- adicionar validação com React Hook Form + Zod;
-- conectar Supabase Database;
-- adicionar Supabase Auth;
-- proteger rotas privadas;
-- exportar relatórios;
-- criar estudo de caso no portfólio.
+- Integração com Supabase.
+- Autenticação de usuários.
+- Rotas privadas.
+- Exportação de relatórios.
+- React Hook Form + Zod.
+- Página individual de clientes.
+- Melhorias em responsividade.
+- Dados dinâmicos reais.
+- Estudos de caso no portfólio.
 
 ---
 
 ## Observação
 
-Esta é uma **demo funcional premium**, não um SaaS comercial completo em produção.
+Esta aplicação ainda não é um SaaS comercial completo.
 
-A proposta é demonstrar interface, fluxo, organização e potencial de produto. A integração com backend real está planejada para uma próxima versão.
+A proposta atual é demonstrar:
+
+- qualidade visual;
+- estrutura de Front-end;
+- experiência de produto;
+- organização de código;
+- capacidade técnica para vagas e freelas.
 
 ---
 
-Desenvolvido por **Maurício Júnior**.
+## Contato
+
+**Maurício da Conceição Silva Júnior**
+
+- GitHub: https://github.com/Juniorsilva-tech
+- Email: mauriciojr07052006@gmail.com
+- WhatsApp: +55 24 99262-5175
+
+---
+
+## Licença
+
+Projeto desenvolvido para fins de portfólio, estudo e demonstração profissional.

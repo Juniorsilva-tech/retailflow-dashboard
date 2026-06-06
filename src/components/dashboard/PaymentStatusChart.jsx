@@ -1,6 +1,6 @@
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import Card from '../ui/Card'
-const COLORS = ['#34d399', '#fbbf24', '#a78bfa', '#fb7185']
+const COLORS = ['#fb923c', '#fbbf24', '#a78bfa', '#fb7185']
 export default function PaymentStatusChart({ data }) {
   return (
     <Card className="h-[340px]">

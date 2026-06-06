@@ -9,7 +9,7 @@ export default function StatCard({ title, value, icon: Icon, money = false }) {
           <p className="text-sm font-bold text-slate-400">{title}</p>
           <p className="mt-3 text-3xl font-black tracking-[-0.04em] text-white">{money ? formatCurrency(value) : value}</p>
         </div>
-        {Icon && <div className="rounded-2xl border border-sky-300/20 bg-sky-400/10 p-3 text-sky-200"><Icon size={20} /></div>}
+        {Icon && <div className="rounded-2xl border border-white/10 bg-white/[0.08] p-3 text-white/90"><Icon size={20} /></div>}
       </div>
     </Card>
   )

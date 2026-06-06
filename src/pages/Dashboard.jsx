@@ -13,7 +13,7 @@ export default function Dashboard() {
   const metrics = useDashboardMetrics()
   return (
     <div className="space-y-8">
-      <section><p className="text-sm font-black uppercase tracking-[0.24em] text-sky-300">Overview</p><h2 className="mt-3 text-4xl font-black tracking-[-0.06em] md:text-5xl">Visão geral do negócio</h2><p className="mt-3 max-w-2xl text-slate-400">Acompanhe clientes, vendas, pedidos, pagamentos e presença regional em uma interface SaaS premium.</p></section>
+      <section><p className="text-sm font-black uppercase tracking-[0.24em] text-orange-300">Overview</p><h2 className="mt-3 text-4xl font-black tracking-[-0.06em] md:text-5xl">Visão geral do negócio</h2><p className="mt-3 max-w-2xl text-slate-300">Acompanhe clientes, vendas, pedidos, pagamentos e presença regional no seu painel.</p></section>
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <StatCard title="Total de clientes" value={metrics.totalCustomers} icon={Users} />
         <StatCard title="Recebido" value={metrics.totalRevenue} icon={DollarSign} money />

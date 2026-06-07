@@ -15,6 +15,9 @@ Demo funcional de dashboard SaaS desenvolvida para demonstrar habilidades em **R
 **Deploy:** https://retailflow-dashboard.vercel.app  
 **GitHub:** https://github.com/Juniorsilva-tech/retailflow-dashboard
 
+![Dashboard](out_dash.png)
+![Customer map](out_map_check.png)
+
 ---
 
 ## Sobre o Projeto

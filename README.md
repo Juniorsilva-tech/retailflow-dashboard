@@ -1,74 +1,24 @@
 # RetailFlow Dashboard
 
-Demo funcional de dashboard SaaS desenvolvida para demonstrar habilidades em **React**, **CRUD**, **interfaces modernas**, **dashboards responsivos** e experiência de produto aplicada a pequenos negócios.
+**Dashboard comercial em React para gestão de clientes, pedidos, pagamentos e relatórios.**
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38BDF8)
-![Recharts](https://img.shields.io/badge/Recharts-111827?style=for-the-badge)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+O RetailFlow Dashboard é uma aplicação front-end criada para demonstrar construção de interfaces administrativas, CRUDs, filtros, métricas e visualização de dados em um fluxo parecido com produto SaaS.
+
+> Objetivo: mostrar domínio prático de **React**, **componentização**, **responsividade**, **estado de interface**, **CRUD** e experiência de dashboard para vagas de Front-end Júnior e estágio em tecnologia.
 
 ---
 
-## Live Demo
+## Links
 
-**Deploy:** https://retailflow-dashboard.vercel.app  
-**GitHub:** https://github.com/Juniorsilva-tech/retailflow-dashboard
+- **Deploy:** https://retailflow-dashboard.vercel.app
+- **Repositório:** https://github.com/Juniorsilva-tech/retailflow-dashboard
+
+---
+
+## Screenshots
 
 ![Dashboard](out_dash.png)
 ![Customer map](out_map_check.png)
-
----
-
-## Sobre o Projeto
-
-O **RetailFlow Dashboard** é uma demo técnica e visual criada para simular um dashboard SaaS moderno voltado para pequenos negócios.
-
-O objetivo principal do projeto não é representar um produto comercial finalizado, mas sim demonstrar:
-
-- construção de interfaces profissionais;
-- organização de dashboards;
-- experiência de produto;
-- CRUDs completos;
-- componentização em React;
-- responsividade;
-- UI moderna;
-- organização de aplicações Front-end.
-
-A aplicação atualmente funciona como uma **demo funcional premium**, utilizando dados simulados e persistência local via `localStorage`.
-
----
-
-## Natureza da Aplicação
-
-Este projeto deve ser entendido como uma **demo funcional de Front-end**.
-
-Ele foi criado para demonstrar capacidade técnica, experiência visual e construção de interfaces modernas.
-
-Atualmente:
-
-- não possui backend real;
-- não possui autenticação;
-- utiliza persistência local;
-- não é um SaaS comercial finalizado.
-
-Mesmo assim, a aplicação foi construída buscando transmitir sensação de produto real e experiência moderna de dashboard.
-
----
-
-## Objetivo Profissional
-
-Este projeto foi desenvolvido para demonstrar capacidade prática em:
-
-- Front-end React;
-- dashboards SaaS;
-- CRUD completo;
-- UI/UX;
-- componentização;
-- tabelas, filtros e modais;
-- organização de aplicações web modernas.
-
-Também serve como demonstração de potencial para freelas, vagas e futuros projetos comerciais.
 
 ---
 
@@ -76,126 +26,84 @@ Também serve como demonstração de potencial para freelas, vagas e futuros pro
 
 ### Dashboard
 
-- Métricas principais
-- Receita recebida
-- Valor pendente
-- Pagamentos atrasados
-- Ticket médio
-- Gráficos financeiros
-- Pedidos recentes
-- Mapa regional de clientes
-- Alertas financeiros
+- Métricas principais do negócio
+- Receita recebida, pendente e pagamentos atrasados
+- Ticket médio e visão geral financeira
+- Gráficos com Recharts
+- Pedidos recentes e alertas financeiros
 
 ### Clientes
 
-- Criar clientes
-- Editar clientes
-- Excluir clientes
+- Criar, editar e excluir clientes
 - Busca dinâmica
 - Filtros por status
 - Badges visuais
+- Layout adaptado para mobile
 
 ### Pedidos
 
 - CRUD de pedidos
 - Status de pedido
-- Integração com clientes
-- Controle de pagamentos
+- Integração com clientes simulados
+- Controle de pagamento
 - Filtros dinâmicos
 
-### Pagamentos
+### Pagamentos e relatórios
 
-- Controle financeiro
-- Marcar pagamentos como pagos
-- Detecção de status
-- Valor restante
-- CRUD de pagamentos
-
-### Relatórios
-
-- Receita recebida
-- Receita pendente
-- Clientes inadimplentes
-- Top clientes
-- Métricas do mês
-- Relatórios visuais
+- Controle de valores pagos e pendentes
+- Marcação de pagamentos como pagos
+- Relatórios de receita, clientes e indicadores
+- Cards e tabelas para leitura rápida
 
 ---
 
-## Stack Utilizada
-
-### Front-end
+## Stack
 
 - React
 - Vite
 - Tailwind CSS
-- Framer Motion
 - React Router DOM
-- Lucide React
+- Framer Motion
 - Recharts
-
-### Persistência
-
+- Lucide React
 - localStorage
-
-### Deploy e Versionamento
-
 - Vercel
-- Git
-- GitHub
 
 ---
 
-## Persistência Local
-
-Os dados da aplicação são persistidos localmente usando `localStorage`.
-
-Isso permite:
-
-- criar registros;
-- editar registros;
-- excluir registros;
-- manter dados salvos após atualização da página.
-
-A proposta atual é demonstrar arquitetura de interface e experiência de produto antes da integração com backend real.
-
----
-
-## Estrutura do Projeto
+## Estrutura do projeto
 
 ```txt
 retailflow-dashboard/
-├── index.html
-├── package.json
-├── README.md
-└── src/
-    ├── App.jsx
-    ├── main.jsx
-    ├── index.css
-    ├── context/
-    ├── data/
-    ├── hooks/
-    ├── layouts/
-    ├── pages/
-    ├── components/
-    └── utils/
+  src/
+    components/   componentes reutilizáveis
+    context/      estado global/local da aplicação
+    data/         dados simulados
+    hooks/        hooks utilitários
+    layouts/      estrutura visual das páginas
+    pages/        telas principais
+    utils/        funções auxiliares
 ```
 
 ---
 
-## Rodando Localmente
+## Decisões técnicas
+
+- **React + Vite** para desenvolvimento rápido e simples de manter.
+- **Tailwind CSS** para construir uma UI responsiva com consistência visual.
+- **React Router DOM** para separar as áreas principais do dashboard.
+- **localStorage** para persistir dados localmente e permitir CRUD funcional sem backend.
+- **Recharts** para transformar dados simulados em visualizações úteis.
+- **Componentização** para separar cards, tabelas, filtros, modais e páginas.
+
+---
+
+## Como rodar localmente
 
 ```bash
-# Clone o repositório
 git clone https://github.com/Juniorsilva-tech/retailflow-dashboard.git
-
-# Entre na pasta
 cd retailflow-dashboard
-
-# Instale as dependências
 npm install
-
-# Rode o projeto
 npm run dev
 ```
 
@@ -205,9 +113,7 @@ Acesse:
 http://localhost:5173
 ```
 
----
-
-## Build de Produção
+Build de produção:
 
 ```bash
 npm run build
@@ -216,44 +122,44 @@ npm run preview
 
 ---
 
-## Próximos Passos
+## Status atual
 
-- Integração com Supabase.
-- Autenticação de usuários.
-- Rotas privadas.
-- Exportação de relatórios.
-- React Hook Form + Zod.
-- Página individual de clientes.
-- Melhorias em responsividade.
-- Dados dinâmicos reais.
-- Estudos de caso no portfólio.
+- CRUD funcional com persistência local
+- Dashboard, clientes, pedidos, pagamentos e relatórios implementados
+- Responsividade aplicada nas telas principais
+- Sem backend real neste momento
+- Sem autenticação neste momento
 
 ---
 
-## Observação
+## Roadmap
 
-Esta aplicação ainda não é um SaaS comercial completo.
-
-A proposta atual é demonstrar:
-
-- qualidade visual;
-- estrutura de Front-end;
-- experiência de produto;
-- organização de código;
-- capacidade técnica para vagas e freelas.
+- Migrar persistência local para Supabase
+- Adicionar autenticação
+- Criar rotas privadas
+- Adicionar React Hook Form + Zod nos formulários
+- Criar página individual de cliente
+- Melhorar acessibilidade e estados de erro
+- Adicionar exportação de relatórios
 
 ---
 
-## Contato
+## O que este projeto demonstra
 
-**Maurício da Conceição Silva Júnior**
+- Criação de dashboard com React
+- Organização de telas e componentes
+- CRUD completo no front-end
+- Manipulação de estado e persistência local
+- Interface responsiva para uso administrativo
+- Apresentação de dados com gráficos, filtros e tabelas
+
+---
+
+## Autor
+
+**Maurício da Conceição Silva Júnior**  
+Front-end React Júnior | Estudante de ADS
 
 - GitHub: https://github.com/Juniorsilva-tech
+- Portfólio: https://mjr-forge-portfolio.vercel.app
 - Email: mauriciojr07052006@gmail.com
-- WhatsApp: +55 24 99262-5175
-
----
-
-## Licença
-
-Projeto desenvolvido para fins de portfólio, estudo e demonstração profissional.
